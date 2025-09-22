@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "PetPal Connect",
+    "subtitle": "Built with Zara",
+    "description": "PetPal Connect is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://556eec0e8a41491c899da5586fddbf55-faxc.vercel.app",
+    "splashImageUrl": "https://556eec0e8a41491c899da5586fddbf55-faxc.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://556eec0e8a41491c899da5586fddbf55-faxc.vercel.app/image.png",
+    "tagline": "PetPal Connect",
+    "screenshotUrls": [
+      "https://556eec0e8a41491c899da5586fddbf55-faxc.vercel.app/screenshot.png",
+      "https://556eec0e8a41491c899da5586fddbf55-faxc.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://556eec0e8a41491c899da5586fddbf55-faxc.vercel.app/api/webhook"
+  }
+}
