@@ -1,23 +1,26 @@
-import { useMiniKit } from '@coinbase/minikit';
 import { Avatar } from './ui/Avatar';
 import { Bell, Menu } from 'lucide-react';
 
 export function Header() {
-  const { context } = useMiniKit();
-  
+  // For now, using mock user data until MiniKit user context is properly configured
+  const mockUser = {
+    displayName: 'Pet Parent',
+    pfpUrl: undefined
+  };
+
   return (
     <header className="flex items-center justify-between mb-6">
       <div className="flex items-center gap-3">
         <Avatar
-          src={context?.user?.pfpUrl}
-          alt={context?.user?.displayName || 'User'}
+          src={mockUser.pfpUrl}
+          alt={mockUser.displayName}
           size="md"
-          fallback={context?.user?.displayName?.charAt(0) || 'U'}
+          fallback={mockUser.displayName.charAt(0)}
         />
         <div>
           <p className="text-sm text-neutral-500">Welcome back,</p>
           <p className="font-semibold text-neutral-900">
-            {context?.user?.displayName || 'Pet Parent'}
+            {mockUser.displayName}
           </p>
         </div>
       </div>

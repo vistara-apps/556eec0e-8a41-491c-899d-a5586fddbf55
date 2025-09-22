@@ -27,12 +27,14 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
 ];
 
-export const MOCK_PROVIDERS = [
+import { ProviderProfile } from './types';
+
+export const MOCK_PROVIDERS: ProviderProfile[] = [
   {
     providerId: '1',
     userId: '1',
     name: 'Sarah Johnson',
-    servicesOffered: ['walking', 'sitting'] as const,
+    servicesOffered: ['walking', 'sitting'],
     specializations: ['Senior Dogs', 'Anxious Pets'],
     rating: 4.9,
     reviewsCount: 127,
@@ -46,7 +48,7 @@ export const MOCK_PROVIDERS = [
     providerId: '2',
     userId: '2',
     name: 'Mike Chen',
-    servicesOffered: ['grooming', 'walking'] as const,
+    servicesOffered: ['grooming', 'walking'],
     specializations: ['Large Breeds', 'Show Grooming'],
     rating: 4.8,
     reviewsCount: 89,
@@ -60,7 +62,7 @@ export const MOCK_PROVIDERS = [
     providerId: '3',
     userId: '3',
     name: 'Emma Rodriguez',
-    servicesOffered: ['sitting', 'boarding'] as const,
+    servicesOffered: ['sitting', 'boarding'],
     specializations: ['Cats', 'Medication Admin'],
     rating: 5.0,
     reviewsCount: 45,
